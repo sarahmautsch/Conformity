@@ -1,0 +1,986 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		7844FAD84700E7D4549B114DE1CE0F09 /* EstimoteBluetoothScanning */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = EECF008B0690182593BBEF49B9F65477 /* Build configuration list for PBXAggregateTarget "EstimoteBluetoothScanning" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = EstimoteBluetoothScanning;
+		};
+		843901D62A94A5B5F4B4145C1722482D /* EstimoteProximitySDK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = B7961D5789BAFE89F244B517C2541736 /* Build configuration list for PBXAggregateTarget "EstimoteProximitySDK" */;
+			buildPhases = (
+			);
+			dependencies = (
+				729E835E57FC07AF7F1EC8FD4C17FDBF /* PBXTargetDependency */,
+			);
+			name = EstimoteProximitySDK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0BC96D90A5CA1DE0F28141574599B38B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		121FB7A72D1D7F4961221DCD8A0C7A18 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F33EDBB995F2FA66BEAD68F8980864 /* ConstraintDescription.swift */; };
+		223ADC9B916783BBCB102C31E9D37772 /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012C676FA11E72915C72C40ED29A6E07 /* ConstraintViewDSL.swift */; };
+		228719B1EB84E1002547241D8482F71C /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40906AE36C9359F09889291F7587739F /* LayoutConstraintItem.swift */; };
+		2454BC042A236EF1B04F0FA979FB89C8 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70E7D18B5B0031A43DCEBA25D5675F5 /* Constraint.swift */; };
+		2F57AE7BE5A778489F28D86FEF7263F9 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15596A0CC6CCAC8FBACDF796123F18C3 /* ConstraintItem.swift */; };
+		4FF39C245C2B0548E81564C1802BDC0A /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA28FB2B617F7E41227FC2F9277D037 /* ConstraintMakerFinalizable.swift */; };
+		52A4AA564F6E1192803E8B732E671456 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2000D249020ED8B32A459CB2CFD2406A /* ConstraintLayoutSupportDSL.swift */; };
+		541292698CB1050B1B46A4A045BB3687 /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BBF98DC3AA721773AFF8D6D13FEC17 /* ConstraintLayoutGuideDSL.swift */; };
+		57B801A3DC5D60D241026885712910B7 /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647EFEC1C23A46ECC668B1F5E8D2749C /* ConstraintMakerEditable.swift */; };
+		5ADEECD8FE0154DDFE4D5586F5464159 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF26B496B277C58C5A71C4C3ED1A20B7 /* ConstraintAttributes.swift */; };
+		5F0DC3999482B7862BBE11FF88D1B90B /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99583403A9CAA55B5F59346F1FA5D41B /* ConstraintView+Extensions.swift */; };
+		602D6E4E6D1ACDEEBC95510D6338E890 /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4351B6E7FA277DAD10215486D29D2816 /* ConstraintLayoutGuide+Extensions.swift */; };
+		66A1BEBB0392C4FF8E69DF747EE211E8 /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AA122C8E1738911C816DBA05DADF3F /* ConstraintOffsetTarget.swift */; };
+		6B8237364C819D639137952AFE3FF656 /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8896D6FDD48A9CECEC323115E844960 /* ConstraintPriorityTarget.swift */; };
+		6F44E222CB7ECAABF2F2EDFF91B69483 /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91F44726869098327424EF358A5FF4B /* ConstraintConstantTarget.swift */; };
+		76FEEA6EE5B88D12F448DE4E0153B61F /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EE5013865438C58DCE74E199BA67B3 /* ConstraintMakerPriortizable.swift */; };
+		794D58F7508B588967F671D16B1D6A00 /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AD49593FB8EE77ED3A7F92B244CCE1 /* ConstraintLayoutSupport.swift */; };
+		7CCFF42E836F518AE27316A7E12678F9 /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E61C6B80D56F3BB3E20D26B9640575BF /* SnapKit-dummy.m */; };
+		889D0A71DF4184BB6D563B41CFDEDC97 /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B41069284BE4A619FA4A02F00DC06 /* ConstraintDSL.swift */; };
+		89C08F479042BB5B75A9F9BA83B10C50 /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD7962A1629B28EDFF1A37443DDBBB6 /* UILayoutSupport+Extensions.swift */; };
+		8CC6D89B4DF4D3861766D58EB5321615 /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ECFECF302060E4823E63148CDE4946 /* ConstraintMultiplierTarget.swift */; };
+		982470155FFD346FF36094B7526A764C /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E96DCE91903F9A571BA1A5BB07D0F5 /* ConstraintConfig.swift */; };
+		A3472374DFFF1675EFF29A711C06238D /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0BD380FD6BB62BF0325F9AF9557A02 /* Debugging.swift */; };
+		AFC3FCA148EB981AC8D30AE37B6001C7 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D856A38F949057E6E0E785B4193F4D /* ConstraintMaker.swift */; };
+		B477B41638E238D51FA74B7042D5326C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		BB18C486FDAED58D13B1E739023D30B4 /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7815D5DE7D62EA1401C0865C469D64FB /* ConstraintView.swift */; };
+		BB1E4280BF603222F7458168900FAD2B /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317D49D4CAF76BFC91342B6764347B70 /* ConstraintMakerRelatable.swift */; };
+		C19FA3E213685A0870A48E8412826CEF /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6E1DA6AC56D240332AB3675CC84D3E /* ConstraintInsetTarget.swift */; };
+		C1C357DD94758A6654576E257EDCC9C4 /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35435ADD384ED005A2FE31F067D4D20 /* ConstraintPriority.swift */; };
+		C5929CD70616291DAB99E4CBA3A25565 /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 95776CF6C6F424B60F15E8FDCB3A286E /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C757E2E6F9F1A0E2C6C29429BCAC67D6 /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8D586737BB977D10E2ECB58B8D65CD /* ConstraintMakerExtendable.swift */; };
+		C88B649A1E65FF8BBD93455A24AB8C1F /* Pods-Conformity-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BF7241829905E447DDA17CDB71E526AB /* Pods-Conformity-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8EE426ECABDC752D3407A4EADB3A6D4 /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = B374A2877D13F03CAAAB1F80CCB8FF53 /* ConstraintLayoutGuide.swift */; };
+		D3E2E20E1772D200C61E6D4D4C0CD78C /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE008D75C2B1402BEC938D06782E7BEE /* ConstraintRelatableTarget.swift */; };
+		DCEB8A970ECE1845287C527610B56BFB /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFF2C220DA14650604E5482CC4835B2 /* ConstraintInsets.swift */; };
+		ED23A1158E05C4F09C748EB9AC18045B /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780C2160B64A65BEDDED62AF22A0990E /* LayoutConstraint.swift */; };
+		F32A38A6EE10C5F8F933B5657CB02F43 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C7944EF9E74C42A1ACC52C2FCBCF34 /* ConstraintRelation.swift */; };
+		F3CA97F21FAE4267ADA06E639A3601E4 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AD2C3182B40C27C7D29DE066D9B4D6 /* Typealiases.swift */; };
+		F3CCD4CBA7BF5DE02CEA4C59B647F2FC /* Pods-Conformity-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 91528C939F368064F24715CD2B04464F /* Pods-Conformity-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		107BCB21DE7419799FA8803A808D7B21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CE35F74B7505CAA06427B6786CBEF14;
+			remoteInfo = SnapKit;
+		};
+		8E1E7563C2D94C77D86335A3EBED98D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7844FAD84700E7D4549B114DE1CE0F09;
+			remoteInfo = EstimoteBluetoothScanning;
+		};
+		9F4F8CEF3B0C243442D4FBAA71B65E96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 843901D62A94A5B5F4B4145C1722482D;
+			remoteInfo = EstimoteProximitySDK;
+		};
+		F807B87480ED2FFC1A72E5BD2AE41780 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7844FAD84700E7D4549B114DE1CE0F09;
+			remoteInfo = EstimoteBluetoothScanning;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		000D53462132C623AFFB89C59DEAF57B /* Pods-Conformity-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Conformity-Info.plist"; sourceTree = "<group>"; };
+		012C676FA11E72915C72C40ED29A6E07 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
+		016B41069284BE4A619FA4A02F00DC06 /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
+		097FA114CD2E4471007F425646D27921 /* Pods_Conformity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Conformity.framework; path = "Pods-Conformity.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EA28FB2B617F7E41227FC2F9277D037 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
+		12C7944EF9E74C42A1ACC52C2FCBCF34 /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
+		14B424E476EE84B6508DBFACBD20C13E /* Pods-Conformity-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Conformity-acknowledgements.markdown"; sourceTree = "<group>"; };
+		15596A0CC6CCAC8FBACDF796123F18C3 /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
+		19EE5013865438C58DCE74E199BA67B3 /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
+		1BDB5CB15B995C42F587E84FB0DAA33D /* EBSScanInfoEstimoteTelemetryB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EBSScanInfoEstimoteTelemetryB.h; path = EstimoteBluetoothScanning/EstimoteBluetoothScanning.framework/Headers/EBSScanInfoEstimoteTelemetryB.h; sourceTree = "<group>"; };
+		2000D249020ED8B32A459CB2CFD2406A /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
+		2140AE95F54302240B8A7C6E1BE374FB /* EBSScanInfoEstimoteEncrypted.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EBSScanInfoEstimoteEncrypted.h; path = EstimoteBluetoothScanning/EstimoteBluetoothScanning.framework/Headers/EBSScanInfoEstimoteEncrypted.h; sourceTree = "<group>"; };
+		2274E88545D2968C2CD845F9E0D75492 /* EBSScanInfoGeneric.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EBSScanInfoGeneric.h; path = EstimoteBluetoothScanning/EstimoteBluetoothScanning.framework/Headers/EBSScanInfoGeneric.h; sourceTree = "<group>"; };
+		2623ED930922AB3CD573376A3456AB50 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
+		2CFF2C220DA14650604E5482CC4835B2 /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
+		317D49D4CAF76BFC91342B6764347B70 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
+		35D856A38F949057E6E0E785B4193F4D /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
+		37C28785C3B78944C1EDA7F3AD417456 /* EBSScanInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EBSScanInfo.h; path = EstimoteBluetoothScanning/EstimoteBluetoothScanning.framework/Headers/EBSScanInfo.h; sourceTree = "<group>"; };
+		40906AE36C9359F09889291F7587739F /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
+		42A7F5B5E9067DE19D63D06767D2A5FB /* EstimoteBluetoothScanning.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EstimoteBluetoothScanning.xcconfig; sourceTree = "<group>"; };
+		4351B6E7FA277DAD10215486D29D2816 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
+		46F5CFCCEF2185A9C2DFAF516F3478AB /* Pods-Conformity-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Conformity-acknowledgements.plist"; sourceTree = "<group>"; };
+		47AF2DC4D4BF1B287B368A895B9C4675 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A8C39A53FE78CBF9A93F5296F3CD267 /* SnapKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SnapKit-Info.plist"; sourceTree = "<group>"; };
+		521AF9C128AFDD036ACA4DE17913F639 /* EstimoteProximitySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EstimoteProximitySDK.framework; path = EstimoteProximitySDK/EstimoteProximitySDK.framework; sourceTree = "<group>"; };
+		5541A08F5F8B196E33C2B417F9151FB2 /* EBSScanInfoEstimoteTelemetryA.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EBSScanInfoEstimoteTelemetryA.h; path = EstimoteBluetoothScanning/EstimoteBluetoothScanning.framework/Headers/EBSScanInfoEstimoteTelemetryA.h; sourceTree = "<group>"; };
+		5D6E1DA6AC56D240332AB3675CC84D3E /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
+		5E07777A3E09E723522AC27604E1BE66 /* EBSScanInfoEstimoteLocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EBSScanInfoEstimoteLocation.h; path = EstimoteBluetoothScanning/EstimoteBluetoothScanning.framework/Headers/EBSScanInfoEstimoteLocation.h; sourceTree = "<group>"; };
+		5EA6151E0C711AE8C362FE3CF7B918EC /* Pods-Conformity.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Conformity.modulemap"; sourceTree = "<group>"; };
+		647EFEC1C23A46ECC668B1F5E8D2749C /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
+		6C0BD380FD6BB62BF0325F9AF9557A02 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
+		72AFF2F0489C3D59A58C38C17308347D /* EBSScanInfoEstimoteUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EBSScanInfoEstimoteUtilities.h; path = EstimoteBluetoothScanning/EstimoteBluetoothScanning.framework/Headers/EBSScanInfoEstimoteUtilities.h; sourceTree = "<group>"; };
+		780C2160B64A65BEDDED62AF22A0990E /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
+		7815D5DE7D62EA1401C0865C469D64FB /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
+		78C52744377A13E103F307482CDE02A5 /* Pods-Conformity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Conformity.debug.xcconfig"; sourceTree = "<group>"; };
+		7D1425676452933911C20FF54B4BD9DC /* EBSScanInfoEstimoteMesh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EBSScanInfoEstimoteMesh.h; path = EstimoteBluetoothScanning/EstimoteBluetoothScanning.framework/Headers/EBSScanInfoEstimoteMesh.h; sourceTree = "<group>"; };
+		8ACA8CDC63A443C4BBB8E4C761C31DDB /* EstimoteBluetoothScanning.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EstimoteBluetoothScanning.framework; path = EstimoteBluetoothScanning/EstimoteBluetoothScanning.framework; sourceTree = "<group>"; };
+		8C69B02BAD8AA6CB4B54FEBBF4DDA7B8 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
+		91528C939F368064F24715CD2B04464F /* Pods-Conformity-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Conformity-dummy.m"; sourceTree = "<group>"; };
+		95776CF6C6F424B60F15E8FDCB3A286E /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
+		99583403A9CAA55B5F59346F1FA5D41B /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A1AD2C3182B40C27C7D29DE066D9B4D6 /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Source/Typealiases.swift; sourceTree = "<group>"; };
+		A8896D6FDD48A9CECEC323115E844960 /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
+		A91F44726869098327424EF358A5FF4B /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
+		AEE3893D3EDFDBE27715D79A830A53D9 /* EBSScanInfoLocationConnectivity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EBSScanInfoLocationConnectivity.h; path = EstimoteBluetoothScanning/EstimoteBluetoothScanning.framework/Headers/EBSScanInfoLocationConnectivity.h; sourceTree = "<group>"; };
+		B0F33EDBB995F2FA66BEAD68F8980864 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
+		B374A2877D13F03CAAAB1F80CCB8FF53 /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
+		B3BBC6A7F16CF747EA0FEF99665DF25A /* EBSUniversalScanner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EBSUniversalScanner.h; path = EstimoteBluetoothScanning/EstimoteBluetoothScanning.framework/Headers/EBSUniversalScanner.h; sourceTree = "<group>"; };
+		B592C9D8F2FB2924B086EBC2B62CC92B /* EBSScanInfoLTEConnectivity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EBSScanInfoLTEConnectivity.h; path = EstimoteBluetoothScanning/EstimoteBluetoothScanning.framework/Headers/EBSScanInfoLTEConnectivity.h; sourceTree = "<group>"; };
+		B70E7D18B5B0031A43DCEBA25D5675F5 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
+		B7AD49593FB8EE77ED3A7F92B244CCE1 /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
+		BF7241829905E447DDA17CDB71E526AB /* Pods-Conformity-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Conformity-umbrella.h"; sourceTree = "<group>"; };
+		C278DAB475BD5D6B01E5BAF1579EDEC6 /* EBSScanInfoUWB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EBSScanInfoUWB.h; path = EstimoteBluetoothScanning/EstimoteBluetoothScanning.framework/Headers/EBSScanInfoUWB.h; sourceTree = "<group>"; };
+		C7FCCAB52C451DFE06C33F1B73D05793 /* EBSScanInfoIBeacon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EBSScanInfoIBeacon.h; path = EstimoteBluetoothScanning/EstimoteBluetoothScanning.framework/Headers/EBSScanInfoIBeacon.h; sourceTree = "<group>"; };
+		C9A19E3014596E9A41AB6781086B2829 /* EstimoteProximitySDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EstimoteProximitySDK.xcconfig; sourceTree = "<group>"; };
+		C9E96DCE91903F9A571BA1A5BB07D0F5 /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
+		C9ECFECF302060E4823E63148CDE4946 /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
+		CA3FC6A23FE93F02D5ABD95BE8245EA5 /* EBSScanInfoMirrorConnectivity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EBSScanInfoMirrorConnectivity.h; path = EstimoteBluetoothScanning/EstimoteBluetoothScanning.framework/Headers/EBSScanInfoMirrorConnectivity.h; sourceTree = "<group>"; };
+		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CB8D586737BB977D10E2ECB58B8D65CD /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
+		CDF3B994F49F1BDE70EA35CE7FBA279D /* EstimoteBluetoothScanning.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EstimoteBluetoothScanning.h; path = EstimoteBluetoothScanning/EstimoteBluetoothScanning.framework/Headers/EstimoteBluetoothScanning.h; sourceTree = "<group>"; };
+		CFD7962A1629B28EDFF1A37443DDBBB6 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
+		D159E016D0BD5A6FC7032E67245104F6 /* EBSScanInfoProximityConnectivity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EBSScanInfoProximityConnectivity.h; path = EstimoteBluetoothScanning/EstimoteBluetoothScanning.framework/Headers/EBSScanInfoProximityConnectivity.h; sourceTree = "<group>"; };
+		D2BBF98DC3AA721773AFF8D6D13FEC17 /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
+		D5AA122C8E1738911C816DBA05DADF3F /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
+		E61C6B80D56F3BB3E20D26B9640575BF /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
+		EBFE5899BDBB18AF2946E7B35BE4DDEC /* Pods-Conformity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Conformity.release.xcconfig"; sourceTree = "<group>"; };
+		EE008D75C2B1402BEC938D06782E7BEE /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
+		F26AB14F544E01EFCB4744080F724B2E /* EBSScanInfoIBeaconWithService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EBSScanInfoIBeaconWithService.h; path = EstimoteBluetoothScanning/EstimoteBluetoothScanning.framework/Headers/EBSScanInfoIBeaconWithService.h; sourceTree = "<group>"; };
+		F2D2A4B32FB46560B56AD8FF72509E1B /* SnapKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.xcconfig; sourceTree = "<group>"; };
+		F311398D7E74BB6666F5FE36872807BF /* EBSScanInfoNearable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EBSScanInfoNearable.h; path = EstimoteBluetoothScanning/EstimoteBluetoothScanning.framework/Headers/EBSScanInfoNearable.h; sourceTree = "<group>"; };
+		F35435ADD384ED005A2FE31F067D4D20 /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
+		F3A0023C8BEE1175645C3EEE755A9409 /* Pods-Conformity-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Conformity-frameworks.sh"; sourceTree = "<group>"; };
+		FC4BAA1D72107BAC34DFBEE2F091FC69 /* EBSScanInfoEstimoteTelemetry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EBSScanInfoEstimoteTelemetry.h; path = EstimoteBluetoothScanning/EstimoteBluetoothScanning.framework/Headers/EBSScanInfoEstimoteTelemetry.h; sourceTree = "<group>"; };
+		FF26B496B277C58C5A71C4C3ED1A20B7 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		224483CA7BF2677AF939A690EF9080F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BC96D90A5CA1DE0F28141574599B38B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8960E7C2A694F9505DDCB437F43F238D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B477B41638E238D51FA74B7042D5326C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		110CD8742F6FFFAD9F6D1ED61F4972E2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2623ED930922AB3CD573376A3456AB50 /* SnapKit.modulemap */,
+				F2D2A4B32FB46560B56AD8FF72509E1B /* SnapKit.xcconfig */,
+				E61C6B80D56F3BB3E20D26B9640575BF /* SnapKit-dummy.m */,
+				4A8C39A53FE78CBF9A93F5296F3CD267 /* SnapKit-Info.plist */,
+				8C69B02BAD8AA6CB4B54FEBBF4DDA7B8 /* SnapKit-prefix.pch */,
+				95776CF6C6F424B60F15E8FDCB3A286E /* SnapKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SnapKit";
+			sourceTree = "<group>";
+		};
+		1E55A100A15296BD4C5FDAC48D472FDE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9A19E3014596E9A41AB6781086B2829 /* EstimoteProximitySDK.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/EstimoteProximitySDK";
+			sourceTree = "<group>";
+		};
+		2D654DB2C3F7C6BBD1DF18FEA29404C0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				42A7F5B5E9067DE19D63D06767D2A5FB /* EstimoteBluetoothScanning.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/EstimoteBluetoothScanning";
+			sourceTree = "<group>";
+		};
+		38A7E768F046A1C50E0FC906E526DE20 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9E28255DC35E632BD1504807253A1575 /* Pods-Conformity */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3CB01FE71102F0A79D9D66EBAD201CB7 /* EstimoteProximitySDK */ = {
+			isa = PBXGroup;
+			children = (
+				FEC0A5BE5340904D48AC483BEDE4C912 /* Frameworks */,
+				1E55A100A15296BD4C5FDAC48D472FDE /* Support Files */,
+			);
+			name = EstimoteProximitySDK;
+			path = EstimoteProximitySDK;
+			sourceTree = "<group>";
+		};
+		4DE26B288DC227F8FF7A1F11CA8F45BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				097FA114CD2E4471007F425646D27921 /* Pods_Conformity.framework */,
+				47AF2DC4D4BF1B287B368A895B9C4675 /* SnapKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5354B80D96E2637E16C1CC7011AF77B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8ACA8CDC63A443C4BBB8E4C761C31DDB /* EstimoteBluetoothScanning.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		659DD84D7F3BE8425A1E7EA31209D6B9 /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				B70E7D18B5B0031A43DCEBA25D5675F5 /* Constraint.swift */,
+				FF26B496B277C58C5A71C4C3ED1A20B7 /* ConstraintAttributes.swift */,
+				C9E96DCE91903F9A571BA1A5BB07D0F5 /* ConstraintConfig.swift */,
+				A91F44726869098327424EF358A5FF4B /* ConstraintConstantTarget.swift */,
+				B0F33EDBB995F2FA66BEAD68F8980864 /* ConstraintDescription.swift */,
+				016B41069284BE4A619FA4A02F00DC06 /* ConstraintDSL.swift */,
+				2CFF2C220DA14650604E5482CC4835B2 /* ConstraintInsets.swift */,
+				5D6E1DA6AC56D240332AB3675CC84D3E /* ConstraintInsetTarget.swift */,
+				15596A0CC6CCAC8FBACDF796123F18C3 /* ConstraintItem.swift */,
+				B374A2877D13F03CAAAB1F80CCB8FF53 /* ConstraintLayoutGuide.swift */,
+				4351B6E7FA277DAD10215486D29D2816 /* ConstraintLayoutGuide+Extensions.swift */,
+				D2BBF98DC3AA721773AFF8D6D13FEC17 /* ConstraintLayoutGuideDSL.swift */,
+				B7AD49593FB8EE77ED3A7F92B244CCE1 /* ConstraintLayoutSupport.swift */,
+				2000D249020ED8B32A459CB2CFD2406A /* ConstraintLayoutSupportDSL.swift */,
+				35D856A38F949057E6E0E785B4193F4D /* ConstraintMaker.swift */,
+				647EFEC1C23A46ECC668B1F5E8D2749C /* ConstraintMakerEditable.swift */,
+				CB8D586737BB977D10E2ECB58B8D65CD /* ConstraintMakerExtendable.swift */,
+				0EA28FB2B617F7E41227FC2F9277D037 /* ConstraintMakerFinalizable.swift */,
+				19EE5013865438C58DCE74E199BA67B3 /* ConstraintMakerPriortizable.swift */,
+				317D49D4CAF76BFC91342B6764347B70 /* ConstraintMakerRelatable.swift */,
+				C9ECFECF302060E4823E63148CDE4946 /* ConstraintMultiplierTarget.swift */,
+				D5AA122C8E1738911C816DBA05DADF3F /* ConstraintOffsetTarget.swift */,
+				F35435ADD384ED005A2FE31F067D4D20 /* ConstraintPriority.swift */,
+				A8896D6FDD48A9CECEC323115E844960 /* ConstraintPriorityTarget.swift */,
+				EE008D75C2B1402BEC938D06782E7BEE /* ConstraintRelatableTarget.swift */,
+				12C7944EF9E74C42A1ACC52C2FCBCF34 /* ConstraintRelation.swift */,
+				7815D5DE7D62EA1401C0865C469D64FB /* ConstraintView.swift */,
+				99583403A9CAA55B5F59346F1FA5D41B /* ConstraintView+Extensions.swift */,
+				012C676FA11E72915C72C40ED29A6E07 /* ConstraintViewDSL.swift */,
+				6C0BD380FD6BB62BF0325F9AF9557A02 /* Debugging.swift */,
+				780C2160B64A65BEDDED62AF22A0990E /* LayoutConstraint.swift */,
+				40906AE36C9359F09889291F7587739F /* LayoutConstraintItem.swift */,
+				A1AD2C3182B40C27C7D29DE066D9B4D6 /* Typealiases.swift */,
+				CFD7962A1629B28EDFF1A37443DDBBB6 /* UILayoutSupport+Extensions.swift */,
+				110CD8742F6FFFAD9F6D1ED61F4972E2 /* Support Files */,
+			);
+			name = SnapKit;
+			path = SnapKit;
+			sourceTree = "<group>";
+		};
+		8993F6E9F5DA8B3ED2765CD72F160C57 /* EstimoteBluetoothScanning */ = {
+			isa = PBXGroup;
+			children = (
+				37C28785C3B78944C1EDA7F3AD417456 /* EBSScanInfo.h */,
+				2140AE95F54302240B8A7C6E1BE374FB /* EBSScanInfoEstimoteEncrypted.h */,
+				5E07777A3E09E723522AC27604E1BE66 /* EBSScanInfoEstimoteLocation.h */,
+				7D1425676452933911C20FF54B4BD9DC /* EBSScanInfoEstimoteMesh.h */,
+				FC4BAA1D72107BAC34DFBEE2F091FC69 /* EBSScanInfoEstimoteTelemetry.h */,
+				5541A08F5F8B196E33C2B417F9151FB2 /* EBSScanInfoEstimoteTelemetryA.h */,
+				1BDB5CB15B995C42F587E84FB0DAA33D /* EBSScanInfoEstimoteTelemetryB.h */,
+				72AFF2F0489C3D59A58C38C17308347D /* EBSScanInfoEstimoteUtilities.h */,
+				2274E88545D2968C2CD845F9E0D75492 /* EBSScanInfoGeneric.h */,
+				C7FCCAB52C451DFE06C33F1B73D05793 /* EBSScanInfoIBeacon.h */,
+				F26AB14F544E01EFCB4744080F724B2E /* EBSScanInfoIBeaconWithService.h */,
+				AEE3893D3EDFDBE27715D79A830A53D9 /* EBSScanInfoLocationConnectivity.h */,
+				B592C9D8F2FB2924B086EBC2B62CC92B /* EBSScanInfoLTEConnectivity.h */,
+				CA3FC6A23FE93F02D5ABD95BE8245EA5 /* EBSScanInfoMirrorConnectivity.h */,
+				F311398D7E74BB6666F5FE36872807BF /* EBSScanInfoNearable.h */,
+				D159E016D0BD5A6FC7032E67245104F6 /* EBSScanInfoProximityConnectivity.h */,
+				C278DAB475BD5D6B01E5BAF1579EDEC6 /* EBSScanInfoUWB.h */,
+				B3BBC6A7F16CF747EA0FEF99665DF25A /* EBSUniversalScanner.h */,
+				CDF3B994F49F1BDE70EA35CE7FBA279D /* EstimoteBluetoothScanning.h */,
+				5354B80D96E2637E16C1CC7011AF77B6 /* Frameworks */,
+				2D654DB2C3F7C6BBD1DF18FEA29404C0 /* Support Files */,
+			);
+			name = EstimoteBluetoothScanning;
+			path = EstimoteBluetoothScanning;
+			sourceTree = "<group>";
+		};
+		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		9E28255DC35E632BD1504807253A1575 /* Pods-Conformity */ = {
+			isa = PBXGroup;
+			children = (
+				5EA6151E0C711AE8C362FE3CF7B918EC /* Pods-Conformity.modulemap */,
+				14B424E476EE84B6508DBFACBD20C13E /* Pods-Conformity-acknowledgements.markdown */,
+				46F5CFCCEF2185A9C2DFAF516F3478AB /* Pods-Conformity-acknowledgements.plist */,
+				91528C939F368064F24715CD2B04464F /* Pods-Conformity-dummy.m */,
+				F3A0023C8BEE1175645C3EEE755A9409 /* Pods-Conformity-frameworks.sh */,
+				000D53462132C623AFFB89C59DEAF57B /* Pods-Conformity-Info.plist */,
+				BF7241829905E447DDA17CDB71E526AB /* Pods-Conformity-umbrella.h */,
+				78C52744377A13E103F307482CDE02A5 /* Pods-Conformity.debug.xcconfig */,
+				EBFE5899BDBB18AF2946E7B35BE4DDEC /* Pods-Conformity.release.xcconfig */,
+			);
+			name = "Pods-Conformity";
+			path = "Target Support Files/Pods-Conformity";
+			sourceTree = "<group>";
+		};
+		9F063C03B1DD200F454B9768C3A19C3E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8993F6E9F5DA8B3ED2765CD72F160C57 /* EstimoteBluetoothScanning */,
+				3CB01FE71102F0A79D9D66EBAD201CB7 /* EstimoteProximitySDK */,
+				659DD84D7F3BE8425A1E7EA31209D6B9 /* SnapKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				9F063C03B1DD200F454B9768C3A19C3E /* Pods */,
+				4DE26B288DC227F8FF7A1F11CA8F45BB /* Products */,
+				38A7E768F046A1C50E0FC906E526DE20 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FEC0A5BE5340904D48AC483BEDE4C912 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				521AF9C128AFDD036ACA4DE17913F639 /* EstimoteProximitySDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AEB99162CDEE1D32E40ADF8817D7D78C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C88B649A1E65FF8BBD93455A24AB8C1F /* Pods-Conformity-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D47054E7589754A339C03E548271BB30 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5929CD70616291DAB99E4CBA3A25565 /* SnapKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3CE35F74B7505CAA06427B6786CBEF14 /* SnapKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFE0CE1B35AA0F08F64309FFA6BF0649 /* Build configuration list for PBXNativeTarget "SnapKit" */;
+			buildPhases = (
+				D47054E7589754A339C03E548271BB30 /* Headers */,
+				89E34283ABE06690C0DDAA08BBA45E7D /* Sources */,
+				224483CA7BF2677AF939A690EF9080F4 /* Frameworks */,
+				B90DDB5CF252B47497BC62F6CCC8584C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnapKit;
+			productName = SnapKit;
+			productReference = 47AF2DC4D4BF1B287B368A895B9C4675 /* SnapKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E757AB9377EEA2762B65519E28C5490F /* Pods-Conformity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87C54A51B12FE1E2E3222965411FA419 /* Build configuration list for PBXNativeTarget "Pods-Conformity" */;
+			buildPhases = (
+				AEB99162CDEE1D32E40ADF8817D7D78C /* Headers */,
+				DD1EED0DEAAAC3E0CE02DF8C6A7CC1FE /* Sources */,
+				8960E7C2A694F9505DDCB437F43F238D /* Frameworks */,
+				CC11FD04E217909B4E0A2C5F3DBA138A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADA4DF5760376FA822F5EBD3667AFAB8 /* PBXTargetDependency */,
+				0584062ACCEDB2E18A2067B9E325D9D7 /* PBXTargetDependency */,
+				36AC569FD8754C028EF84D413BD2BAA1 /* PBXTargetDependency */,
+			);
+			name = "Pods-Conformity";
+			productName = "Pods-Conformity";
+			productReference = 097FA114CD2E4471007F425646D27921 /* Pods_Conformity.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 4DE26B288DC227F8FF7A1F11CA8F45BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7844FAD84700E7D4549B114DE1CE0F09 /* EstimoteBluetoothScanning */,
+				843901D62A94A5B5F4B4145C1722482D /* EstimoteProximitySDK */,
+				E757AB9377EEA2762B65519E28C5490F /* Pods-Conformity */,
+				3CE35F74B7505CAA06427B6786CBEF14 /* SnapKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B90DDB5CF252B47497BC62F6CCC8584C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC11FD04E217909B4E0A2C5F3DBA138A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		89E34283ABE06690C0DDAA08BBA45E7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2454BC042A236EF1B04F0FA979FB89C8 /* Constraint.swift in Sources */,
+				5ADEECD8FE0154DDFE4D5586F5464159 /* ConstraintAttributes.swift in Sources */,
+				982470155FFD346FF36094B7526A764C /* ConstraintConfig.swift in Sources */,
+				6F44E222CB7ECAABF2F2EDFF91B69483 /* ConstraintConstantTarget.swift in Sources */,
+				121FB7A72D1D7F4961221DCD8A0C7A18 /* ConstraintDescription.swift in Sources */,
+				889D0A71DF4184BB6D563B41CFDEDC97 /* ConstraintDSL.swift in Sources */,
+				DCEB8A970ECE1845287C527610B56BFB /* ConstraintInsets.swift in Sources */,
+				C19FA3E213685A0870A48E8412826CEF /* ConstraintInsetTarget.swift in Sources */,
+				2F57AE7BE5A778489F28D86FEF7263F9 /* ConstraintItem.swift in Sources */,
+				602D6E4E6D1ACDEEBC95510D6338E890 /* ConstraintLayoutGuide+Extensions.swift in Sources */,
+				C8EE426ECABDC752D3407A4EADB3A6D4 /* ConstraintLayoutGuide.swift in Sources */,
+				541292698CB1050B1B46A4A045BB3687 /* ConstraintLayoutGuideDSL.swift in Sources */,
+				794D58F7508B588967F671D16B1D6A00 /* ConstraintLayoutSupport.swift in Sources */,
+				52A4AA564F6E1192803E8B732E671456 /* ConstraintLayoutSupportDSL.swift in Sources */,
+				AFC3FCA148EB981AC8D30AE37B6001C7 /* ConstraintMaker.swift in Sources */,
+				57B801A3DC5D60D241026885712910B7 /* ConstraintMakerEditable.swift in Sources */,
+				C757E2E6F9F1A0E2C6C29429BCAC67D6 /* ConstraintMakerExtendable.swift in Sources */,
+				4FF39C245C2B0548E81564C1802BDC0A /* ConstraintMakerFinalizable.swift in Sources */,
+				76FEEA6EE5B88D12F448DE4E0153B61F /* ConstraintMakerPriortizable.swift in Sources */,
+				BB1E4280BF603222F7458168900FAD2B /* ConstraintMakerRelatable.swift in Sources */,
+				8CC6D89B4DF4D3861766D58EB5321615 /* ConstraintMultiplierTarget.swift in Sources */,
+				66A1BEBB0392C4FF8E69DF747EE211E8 /* ConstraintOffsetTarget.swift in Sources */,
+				C1C357DD94758A6654576E257EDCC9C4 /* ConstraintPriority.swift in Sources */,
+				6B8237364C819D639137952AFE3FF656 /* ConstraintPriorityTarget.swift in Sources */,
+				D3E2E20E1772D200C61E6D4D4C0CD78C /* ConstraintRelatableTarget.swift in Sources */,
+				F32A38A6EE10C5F8F933B5657CB02F43 /* ConstraintRelation.swift in Sources */,
+				5F0DC3999482B7862BBE11FF88D1B90B /* ConstraintView+Extensions.swift in Sources */,
+				BB18C486FDAED58D13B1E739023D30B4 /* ConstraintView.swift in Sources */,
+				223ADC9B916783BBCB102C31E9D37772 /* ConstraintViewDSL.swift in Sources */,
+				A3472374DFFF1675EFF29A711C06238D /* Debugging.swift in Sources */,
+				ED23A1158E05C4F09C748EB9AC18045B /* LayoutConstraint.swift in Sources */,
+				228719B1EB84E1002547241D8482F71C /* LayoutConstraintItem.swift in Sources */,
+				7CCFF42E836F518AE27316A7E12678F9 /* SnapKit-dummy.m in Sources */,
+				F3CA97F21FAE4267ADA06E639A3601E4 /* Typealiases.swift in Sources */,
+				89C08F479042BB5B75A9F9BA83B10C50 /* UILayoutSupport+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD1EED0DEAAAC3E0CE02DF8C6A7CC1FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3CCD4CBA7BF5DE02CEA4C59B647F2FC /* Pods-Conformity-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0584062ACCEDB2E18A2067B9E325D9D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EstimoteProximitySDK;
+			target = 843901D62A94A5B5F4B4145C1722482D /* EstimoteProximitySDK */;
+			targetProxy = 9F4F8CEF3B0C243442D4FBAA71B65E96 /* PBXContainerItemProxy */;
+		};
+		36AC569FD8754C028EF84D413BD2BAA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = 3CE35F74B7505CAA06427B6786CBEF14 /* SnapKit */;
+			targetProxy = 107BCB21DE7419799FA8803A808D7B21 /* PBXContainerItemProxy */;
+		};
+		729E835E57FC07AF7F1EC8FD4C17FDBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EstimoteBluetoothScanning;
+			target = 7844FAD84700E7D4549B114DE1CE0F09 /* EstimoteBluetoothScanning */;
+			targetProxy = 8E1E7563C2D94C77D86335A3EBED98D2 /* PBXContainerItemProxy */;
+		};
+		ADA4DF5760376FA822F5EBD3667AFAB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EstimoteBluetoothScanning;
+			target = 7844FAD84700E7D4549B114DE1CE0F09 /* EstimoteBluetoothScanning */;
+			targetProxy = F807B87480ED2FFC1A72E5BD2AE41780 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		050E35895308731075BA8E453F3DFA11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2D2A4B32FB46560B56AD8FF72509E1B /* SnapKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		18B9E4B52061FEDC0C8E73942A99863B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42A7F5B5E9067DE19D63D06767D2A5FB /* EstimoteBluetoothScanning.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		19852C825784489418C30C9C81577121 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9A19E3014596E9A41AB6781086B2829 /* EstimoteProximitySDK.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3A140335BC26348C7FCBC647E8CF8923 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2D2A4B32FB46560B56AD8FF72509E1B /* SnapKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6FF5FB6B2A8419EC30AC2098F04C9F66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78C52744377A13E103F307482CDE02A5 /* Pods-Conformity.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Conformity/Pods-Conformity-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Conformity/Pods-Conformity.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8E0587E417414294C74BDB571234C8B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42A7F5B5E9067DE19D63D06767D2A5FB /* EstimoteBluetoothScanning.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8F1F3D35992A5196CE90E39DC8A8170E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9A19E3014596E9A41AB6781086B2829 /* EstimoteProximitySDK.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A105C1752A0A49B30ED621B71E226CDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		C1391485F05B41BD35738A433056B7FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		EF9946AB3547D6E01999FAAC6A450924 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBFE5899BDBB18AF2946E7B35BE4DDEC /* Pods-Conformity.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Conformity/Pods-Conformity-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Conformity/Pods-Conformity.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1391485F05B41BD35738A433056B7FA /* Debug */,
+				A105C1752A0A49B30ED621B71E226CDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87C54A51B12FE1E2E3222965411FA419 /* Build configuration list for PBXNativeTarget "Pods-Conformity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FF5FB6B2A8419EC30AC2098F04C9F66 /* Debug */,
+				EF9946AB3547D6E01999FAAC6A450924 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7961D5789BAFE89F244B517C2541736 /* Build configuration list for PBXAggregateTarget "EstimoteProximitySDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19852C825784489418C30C9C81577121 /* Debug */,
+				8F1F3D35992A5196CE90E39DC8A8170E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFE0CE1B35AA0F08F64309FFA6BF0649 /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				050E35895308731075BA8E453F3DFA11 /* Debug */,
+				3A140335BC26348C7FCBC647E8CF8923 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EECF008B0690182593BBEF49B9F65477 /* Build configuration list for PBXAggregateTarget "EstimoteBluetoothScanning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E0587E417414294C74BDB571234C8B8 /* Debug */,
+				18B9E4B52061FEDC0C8E73942A99863B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
